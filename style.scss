@@ -1,0 +1,179 @@
+
+$color-paleblue: hsl(225, 100%, 94%);
+$color-brightblue: hsl(245, 75%, 52%);
+
+$color-verypaleblue: hsl(225, 100%, 98%);
+$color-desaturatedblue: hsl(224, 23%, 55%);
+$darkblue: hsl(223, 47%, 23%);
+
+
+html {
+    box-sizing: border-box;
+    line-height: 150%;
+
+  }
+
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-color: $color-paleblue;
+    // text-align: center;
+    // align-items: center;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.carta{
+    background-color: white;
+    border-radius: 16px;
+    max-width: 450px;
+    min-height: 700px;
+    box-shadow: 0px 20px 10px $color-paleblue ;
+
+
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+          align-items: center;
+           text-align: center;
+           justify-content: center;
+
+       
+
+            &-pedido{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-width: 10px;
+                background-color: $color-verypaleblue;
+                border-radius: 10px;
+                width: 80%;
+                margin: auto;
+                
+
+            
+                
+
+                &-logo{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img{
+                         padding: 20px;
+                    }
+                }
+                
+
+              &-cuerpo{
+             
+               
+                h3{
+                    color: $darkblue;
+                    font-weight: 900;
+                    letter-spacing: -0.5px;
+                
+                }
+              }
+
+              
+            }
+
+            &-texto{
+                padding: 7%;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+            }
+
+            h1{
+                font-weight: 900;
+                font-size: 30px;
+                color: $darkblue;
+                
+                
+                
+            }
+            h2{
+                font-size: 16px;
+                font-weight: lighter;
+                color: $color-desaturatedblue;
+                
+
+            }
+
+        }
+    }
+    .boton{
+        margin-right: 5%;
+       border-radius: 5%;
+       color: $darkblue;
+       background-color: transparent;
+       color: $color-brightblue;
+       border: none;
+       text-decoration: underline;
+       font-weight: 900;
+
+    }
+
+    .boton-pago{
+        border-radius: 10px;
+        background-color: $color-brightblue;
+        color: white;
+        width: 100%;
+        // margin-left: 11%;
+        // margin-top: 10%;
+        padding: 3%;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 30px;
+        box-shadow: 0px 20px 10px $color-paleblue ;
+        
+        
+      
+
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+      
+
+    }
+    .boton-cancelar{
+        border-radius: 10px;
+        border: none;
+        color: $color-desaturatedblue;
+        width: 100%;
+        // margin-left: 11%;
+        // margin-top: 3%;
+         padding: 3%;
+        font-weight: 900;
+        background-color: transparent;
+        font-size: 16px;
+        margin-top: 20px;
+
+        
+      
+
+    }
+    
